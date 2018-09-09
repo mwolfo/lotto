@@ -13,4 +13,4 @@ const data = {
     fullDate: "EuroJackpot Results for Friday 07 Sep 2018"    
 };
 
-ReactDOM.render(<App listado={results} data={data} />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
