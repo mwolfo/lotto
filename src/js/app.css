@@ -2,25 +2,51 @@
     text-align: center;
 }
 
-.app-header {
+.main-app .app-header {
     background-color: #64a407;
     height: 50px;
     padding: 20px;
     color: white;
 }
 
-.app-header .title {
+.main-app .app-header .title {
     font-size: 1.5em;
 }
 
-.lotto-title {
+.main-app .lotto-title {
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: 600;
     font-size: 20px;
 }
 
-.media-header {
+.main-app .lotto-numbers {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.main-app .lotto-numbers>div {
+    margin: auto;
+    display: flex;
+}
+
+.main-app .lotto-numbers .number {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.main-app .lotto-numbers .number.normal {
+    border: solid 1px lightgray
+}
+
+.main-app .lotto-numbers .number.euro {
+    border: solid 1px red;
+}
+
+.main-app .results-header {
     width: 60%;
     margin: auto;
     min-width: 600px;
@@ -29,37 +55,11 @@
     font-size: 14px;
 }
 
-.media-header>div {
+.main-app .results-header>div {
     flex: 1;
 }
 
-.lotto-numbers {
-    display: flex;
-    margin-bottom: 30px;
-}
-
-.lotto-numbers >div{
-    margin: auto;
-    display: flex;
-}
-
-.lotto-numbers .number{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    margin: 5px;
-    font-size: 20px;
-}
-
-.lotto-numbers .number.normal {
-    border: solid 1px lightgray
-}
-
-.lotto-numbers .number.euro {
-    border: solid 1px red;
-}
-
-.media-list {
+.main-app .results-list {
     width: 60%;
     margin: auto;
     min-width: 600px;

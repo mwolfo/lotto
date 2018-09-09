@@ -1,15 +1,15 @@
-.media-body {
-    display: flex;
+.result {
+    list-style-type: none;
 }
 
-.media-body>div {
-    flex: 1;
-}
-
-.result:first-child{
+.result:first-child {
     padding-top: 15px;
 }
 
-li {
-    list-style-type: none;
+.result .result-body {
+    display: flex;
+}
+
+.result .result-body>div {
+    flex: 1;
 }

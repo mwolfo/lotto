@@ -83,13 +83,13 @@ class App extends Component {
               }
             </div>
           </div>
-          <div className="media-header">
+          <div className="results-header">
             <div>Tier</div>
             <div>Match</div>
             <div>Winners</div>
             <div>Amount</div>
           </div>
-          <ul className="media-list">
+          <ul className="results-list">
             {
               this.createResultList()
             }

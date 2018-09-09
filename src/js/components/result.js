@@ -37,7 +37,7 @@ class ResultComponent extends React.Component {
   render() {
     return (
       <li className="result">
-        <div className="media-body">
+        <div className="result-body">
           <div>{this.convertToRoman(this.props.index)}</div>
           <div>{this.match[this.props.index]}</div>
           <div>{this.props.winners}X</div>
