@@ -1,7 +1,7 @@
 {
-  "name": "src",
+  "name": "lottoland",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lottoland test",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
@@ -9,10 +9,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jesus Manuel Blanco",
   "license": "ISC",
   "devDependencies": {
-    "axios": "^0.15.2",
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",

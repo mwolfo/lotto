@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './app.css';
 import ResultComponent from './components/result';
-import axios from "axios";
 
 class App extends Component {
   constructor(props) {
@@ -51,8 +50,6 @@ class App extends Component {
     }
     return table;
   }
-
-
   componentDidMount() {
 
     this.fetchData('https://media.lottoland.com/api/drawings/euroJackpot');
