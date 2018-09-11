@@ -1,0 +1,61 @@
+$main-color: #64a407;
+
+body {
+    line-height: 1.5;
+}
+
+.main-app {
+    text-align: center;
+    .app-header {
+        background-color: $main-color;
+        height: 40px;
+        padding: 10px;
+        color: white;
+        .title {
+            font-size: 1.5em;
+            margin-top: 5px;
+        }
+    }
+    .lotto-title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .lotto-numbers {
+        display: flex;
+        margin-bottom: 30px;
+        >div {
+            margin: auto;
+            display: flex;
+        }
+        .number {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin: 5px;
+            font-size: 23px;
+            &.normal {
+                border: solid 1px lightgray;
+            }
+            &.euro {
+                border: solid 1px red;
+            }
+        }
+    }
+    .results-header {
+        width: 60%;
+        margin: auto;
+        min-width: 600px;
+        font-weight: 600;
+        display: flex;
+        font-size: 14px;
+        height: 50px;
+        background-color: $main-color;
+        align-items: center;
+        color: white;
+        >div {
+            flex: 1;
+        }
+    }
+}

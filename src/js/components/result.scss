@@ -1,0 +1,15 @@
+.result {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: solid 1px lightgray;
+    &:nth-child(odd){
+        background-color: rgb(231, 255, 231);
+    }
+    &:last-child{
+        border: none;
+    }
+    >div {
+        flex: 1;
+    }
+}

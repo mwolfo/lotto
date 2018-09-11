@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
-import './app.css';
-import ResultComponent from './components/result';
+import './app.scss';
+
+import ResultsListComponent from './components/results-list';
 
 class App extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
       error: null,
       isLoaded: false,
-      data: null
+      data: null,
+      odds: []
     };
   }
   fetchData(url) {
-    // var that = this;
+    // const that = this;
     // if (url) {
     //   fetch(url).then(function (response) {
     //     return response.json();
@@ -35,21 +38,11 @@ class App extends Component {
 
     this.setState({
       isLoaded: true,
-      data: data
+      data: data,
+      odds: data.last.odds
     });
   }
-  createResultList() {
-    const table = [];
-    for (let i = 1; i < 13; i++) {
-      table.push(<ResultComponent
-        index={i}
-        winners={this.state.data.last.odds['rank' + i].winners} prize={new Intl.NumberFormat('en-GB', {
-          style: 'currency',
-          currency: 'EUR'
-        }).format(this.state.data.last.odds['rank' + i].prize)} />);
-    }
-    return table;
-  }
+
   componentDidMount() {
 
     this.fetchData('https://media.lottoland.com/api/drawings/euroJackpot');
@@ -89,11 +82,7 @@ class App extends Component {
             <div>Winners</div>
             <div>Amount</div>
           </div>
-          <ul className="results-list">
-            {
-              this.createResultList()
-            }
-          </ul>
+          <ResultsListComponent odds={this.state.odds} />
           <br></br>
         </div>
       );
